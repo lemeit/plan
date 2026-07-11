@@ -10,9 +10,27 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </div>
   <p style="color: #555;">Recetas del plan, con checklist de ingredientes que se guarda solo, y guía de pautas y sugerencias.</p>
 
-  <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
-    <a href={`${base}/recetas`} style="padding: 14px 22px; background: #2A7A6E; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">📖 Ver recetas</a>
-    <a href={`${base}/plan-semanal`} style="padding: 14px 22px; background: #2A7A6E; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">🗓️ Plan semanal</a>
-    <a href={`${base}/guia`} style="padding: 14px 22px; background: #eee; color: #333; border-radius: 6px; text-decoration: none; font-weight: bold;">📋 Pautas y sugerencias</a>
+  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 28px;">
+    <a href={`${base}/guia`} style="display: flex; align-items: center; gap: 14px; padding: 16px; background: #f9f9f9; border-left: 4px solid #2A7A6E; border-radius: 0 8px 8px 0; text-decoration: none; color: #333;">
+      <span style="font-size: 28px;">📋</span>
+      <div>
+        <div style="font-weight: bold; color: #2A7A6E; font-size: 1.05em;">Pautas y sugerencias</div>
+        <div style="font-size: 0.9em; color: #666; margin-top: 2px;">Reglas generales y ejemplos rápidos de desayunos y cenas.</div>
+      </div>
+    </a>
+    <a href={`${base}/plan-semanal`} style="display: flex; align-items: center; gap: 14px; padding: 16px; background: #f9f9f9; border-left: 4px solid #2A7A6E; border-radius: 0 8px 8px 0; text-decoration: none; color: #333;">
+      <span style="font-size: 28px;">🗓️</span>
+      <div>
+        <div style="font-weight: bold; color: #2A7A6E; font-size: 1.05em;">Plan semanal</div>
+        <div style="font-size: 0.9em; color: #666; margin-top: 2px;">Las 4 semanas armadas por la nutricionista, día por día.</div>
+      </div>
+    </a>
+    <a href={`${base}/recetas`} style="display: flex; align-items: center; gap: 14px; padding: 16px; background: #f9f9f9; border-left: 4px solid #2A7A6E; border-radius: 0 8px 8px 0; text-decoration: none; color: #333;">
+      <span style="font-size: 28px;">📖</span>
+      <div>
+        <div style="font-weight: bold; color: #2A7A6E; font-size: 1.05em;">Recetas</div>
+        <div style="font-size: 0.9em; color: #666; margin-top: 2px;">34 recetas completas, con checklist de ingredientes e impresión.</div>
+      </div>
+    </a>
   </div>
 </Layout>
