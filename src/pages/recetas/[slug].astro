@@ -10,13 +10,14 @@ export function getStaticPaths() {
 }
 
 const { receta } = Astro.props;
-const imagen = `/img/${receta.slug}.jpg`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const imagen = `${base}/img/${receta.slug}.jpg`;
 ---
 
 <Layout title={receta.titulo}>
 
   <div class="no-print" style="margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
-    <a href="/recetas" style="text-decoration: none; color: #2A7A6E; font-weight: bold;">← Volver a recetas</a>
+    <a href={`${base}/recetas`} style="text-decoration: none; color: #2A7A6E; font-weight: bold;">← Volver a recetas</a>
   </div>
 
   <h1 style="color: #2A7A6E; margin-bottom: 4px;">{receta.titulo}</h1>
