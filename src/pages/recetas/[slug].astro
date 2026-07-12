@@ -59,6 +59,10 @@ const imagen = `${base}/img/${receta.slug}.jpg`;
     ))}
   </ol>
 
+  {receta.baseCientifica && (
+    <p class="receta-ciencia" style="background: #e8f0fe; border-left: 4px solid #1565c0; padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 20px;"><strong>🔬 Base científica:</strong> {receta.baseCientifica}</p>
+  )}
+
   {receta.tip && (
     <p class="receta-tip" style="background: #f0f7f5; padding: 10px 14px; border-radius: 6px; margin-top: 20px;"><strong>Tip:</strong> {receta.tip}</p>
   )}
@@ -157,6 +161,14 @@ const imagen = `${base}/img/${receta.slug}.jpg`;
     .receta-conservacion {
       border-left: 4px solid #2A7A6E;
       background: #f0f7f5 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      break-inside: avoid;
+    }
+
+    .receta-ciencia {
+      border-left: 4px solid #1565c0;
+      background: #e8f0fe !important;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       break-inside: avoid;
