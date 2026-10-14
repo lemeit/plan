@@ -6,7 +6,7 @@ Sitio de recetas y plan nutricional personal, con checklist interactivo de ingre
 
 ## Qué incluye
 
-- **`/recetas`** — 34 recetas (almuerzos/cenas y postres/desayunos), cada una con checklist de ingredientes que se guarda solo en el navegador, e impresión en PDF con formato prolijo.
+- **`/recetas`** — recetas (almuerzos/cenas, postres/desayunos y bebidas funcionales), cada una con checklist de ingredientes que se guarda solo en el navegador, e impresión en PDF con formato prolijo.
 - **`/plan-semanal`** — 4 semanas de almuerzos y cenas, en formato de tabla.
 - **`/guia`** — reglas generales y sugerencias rápidas de desayunos y cenas.
 
